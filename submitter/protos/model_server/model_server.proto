@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package modelserver;
+
+option go_package = "./";
+
+service ModelServer {
+    rpc ModelCall (ModelRequest) returns (ModelResponse);
+}
+
+message ModelRequest {
+    string requestId = 1;
+    uint64 modelId = 2;
+    bytes input = 3;
+}
+
+message ModelResponse {
+    string requestId = 1;
+    string message = 2;
+}
