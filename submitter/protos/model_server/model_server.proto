@@ -11,7 +11,7 @@ service ModelServer {
 message ModelRequest {
     string requestId = 1;
     uint64 modelId = 2;
-    bytes input = 3;
+    string input = 3;
 }
 
 message ModelResponse {

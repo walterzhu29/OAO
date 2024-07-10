@@ -7,7 +7,7 @@ import (
 	"net"
 	"time"
 
-	pb "submitter/protos/model_server" // 更新为实际生成的protobuf包路径
+	pb "submitter/protos/model_server"
 
 	"google.golang.org/grpc"
 )
